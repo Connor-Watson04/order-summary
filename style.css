@@ -1,0 +1,165 @@
+*/ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+@media (max-width: 90em) {
+}
+/* //////////////// */ /* BACKGROUND AREA */ /* ////////////// */
+.background {
+  width: 100%;
+  position: absolute;
+}
+
+.whole {
+  vertical-align: top;
+  width: auto;
+  height: auto;
+  background-color: #e6edff;
+}
+/* ///////////// */
+/* PRICING AREA */
+/* /////////// */
+.container {
+  position: relative;
+  max-width: 25rem;
+  margin: auto;
+  /* padding: 0 3.2rem; */
+  display: flex;
+  /* grid-template-columns: 1fr; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+}
+.dance-img {
+  width: 100%;
+}
+
+.flex-box {
+  /* width: 400px; */
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 7px 12px 12px hsl(245, 100%, 68%, 0.1);
+  margin-top: 4.68rem;
+}
+.text-shrink {
+  padding: 1.6rem 3.2rem 3.2rem 3.2rem;
+}
+.text {
+  font-size: 0.8rem;
+  color: hsl(224, 6%, 61%);
+  margin-bottom: 2.4rem;
+}
+.section-text {
+  display: grid;
+  grid-template-columns: 4.3rem 9.375rem 5.3rem;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+.section-text a {
+  text-align: end;
+  font-weight: 600;
+  color: hsl(245, 75%, 52%);
+  font-size: 0.8rem;
+}
+.cost-fade {
+  color: hsl(224, 6%, 61%);
+}
+.link:active,
+.link:hover {
+  color: hsl(245, 100%, 68%);
+  border-radius: 15px;
+}
+.cost {
+  text-align: left;
+}
+.btn {
+  display: grid;
+  row-gap: 1.6rem;
+}
+.btn-pay {
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  padding: 12px;
+  border-radius: 7px;
+  box-shadow: 0px 12px 10px hsl(245, 100%, 68%, 0.25);
+  font-size: 14px;
+}
+.btn-pay:active,
+.btn-pay:hover {
+  color: #fff;
+  background-color: hsl(245, 75%, 62%);
+  padding: 0.75rem;
+  border-radius: 7px;
+  box-shadow: 0px 12px 10px hsla(245, 100%, 73%, 0.25);
+  font-size: 14px;
+}
+.btn-cancel {
+  color: hsl(224, 6%, 61%);
+  font-weight: 600;
+  font-size: 12px;
+}
+.btn-cancel:active,
+.btn-cancel:hover {
+  color: hsl(228, 3%, 28%);
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 8rem;
+}
+
+/* ////////////// */
+/* MEDIA QUERIES */
+/* //////////// */
+@media (max-width: 23.5em) {
+  .text-shrink {
+    padding: 20px 30px 30px 30px;
+  }
+  .flex-box {
+    width: 85%;
+    margin-top: 5rem;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .text {
+    font-size: 0.75rem;
+  }
+
+  .cost {
+    font-size: 0.9rem;
+  }
+
+  .cost-fade {
+    font-size: 0.8rem;
+  }
+
+  .section-text a {
+    text-align: left;
+  }
+
+  .dance-img {
+    width: 100%;
+  }
+
+  .section-text {
+    grid-template-columns: 4.3rem 8.5rem 5rem;
+  }
+  .background {
+    height: 13rem;
+    width: 100%;
+  }
+}
